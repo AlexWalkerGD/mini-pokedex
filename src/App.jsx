@@ -4,6 +4,7 @@ import axios from "axios";
 
 function App() {
   const [Pokemons, setPokemons] = useState({});
+  const [Search, setSearch] = useState("");
 
   const getPokemons = (id) => {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`).then((response) => {
@@ -17,6 +18,12 @@ function App() {
       .fill()
       .map((_, index) => getPokemons(index + 1));
 
+  const searchPokemons = Object.values(Pokemons).filter(
+    (pokemon) =>
+      pokemon.name.toLocaleLowerCase().includes(Search.toLocaleLowerCase()) ||
+      pokemon.id === parseInt(Search)
+  );
+
   useEffect(() => {
     arrayPokemons();
   }, []);
@@ -24,8 +31,19 @@ function App() {
   return (
     <div className="container">
       <h1>Pokedex</h1>
+
+      <div>
+        <input
+          className="search"
+          type="search"
+          placeholder="To look for"
+          value={Search}
+          onChange={({ target }) => setSearch(target.value)}
+        />
+      </div>
+
       <ul className="list">
-        {Object.values(Pokemons).map(({ id, name, types }) => (
+        {searchPokemons.map(({ id, name, types }) => (
           <li className="card">
             <img
               className="card-image"
