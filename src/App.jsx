@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react";
 
 function App() {
   const [Pokemons, setPokemons] = useState({});
@@ -32,7 +33,9 @@ function App() {
     <div className="container">
       <h1>Pokedex</h1>
 
-      <div>
+      <div className="search-container">
+        <MagnifyingGlassIcon size={22} className="icon" />
+
         <input
           className="search"
           type="search"

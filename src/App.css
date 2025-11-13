@@ -8,6 +8,7 @@ body {
   background-color: #222;
   max-width: 1200px;
   margin: 0 auto;
+  font-family: Lato;
 }
 
 .container h1 {
@@ -16,6 +17,52 @@ body {
   padding-top: 30px;
   margin-bottom: 30px;
   font-size: 50px;
+}
+
+.search-container {
+  margin-block: 25px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  transition: color 0.3s;
+  position: absolute;
+  pointer-events: none;
+}
+
+.search {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.096);
+  box-shadow: 10px 20px 40px rgba(255, 255, 255, 0.1);
+  padding-inline: 20px;
+  border-radius: 10px;
+  width: 0%;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 40px;
+  transition: 1s;
+}
+
+.search::placeholder {
+  color: #888;
+}
+
+.search:hover,
+.search:focus .icon {
+  background-color: #111;
+  width: 30%;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+.search-container:hover .icon {
+  color: rgba(0, 255, 255, 0);
 }
 
 .list {
