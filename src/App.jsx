@@ -39,7 +39,7 @@ function App() {
         <input
           className="search"
           type="search"
-          placeholder="To look for"
+          placeholder="Search"
           value={Search}
           onChange={({ target }) => setSearch(target.value)}
         />
