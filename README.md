@@ -1,16 +1,78 @@
-# React + Vite
+# 🔴 Mini Pokedex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Tech](https://img.shields.io/badge/tech-JavaScript-informational)
 
-Currently, two official plugins are available:
+## 📖 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Mini Pokedex** is a lightweight and interactive web application that allows users to search and explore Pokémon using the official **PokéAPI**.  
+The project displays essential Pokémon information such as name, ID, image, types, and basic stats.
 
-## React Compiler
+🔗 **Access the live project:** [Click here](https://alexwalkergd.github.io/mini-pokedex/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🖼️ Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="1237" height="982" alt="image" src="https://github.com/user-attachments/assets/4776170c-dc5c-4961-ba2e-7d581189ede5" />
+
+---
+
+<img width="1232" height="980" alt="image" src="https://github.com/user-attachments/assets/3d50231e-02c3-4e91-9822-4667feac9bbb" />
+
+
+---
+
+## 🚀 Features
+
+- 🔍 Search Pokémon by name or number  
+- 🖼️ Display official artwork from PokéAPI  
+- 🔢 Show Pokémon ID  
+- 🧬 Show type(s)  
+- 📊 Show basic stats  
+- ⚡ Simple, clean and responsive interface  
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5  
+- CSS3  
+- JavaScript  
+- PokéAPI  
+
+---
+
+## ⚙️ How to Run Locally
+
+1. Clone this repository:
+
+    ```bash
+    git clone https://github.com/AlexWalkerGD/mini-pokedex.git
+    ```
+
+2. Access the project folder:
+
+    ```bash
+    cd mini-pokedex
+    ```
+
+3. Open the `index.html` file  
+   *(or run with a tool like “Live Server” for hot reload)*
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Alex Walker**
+
+💼 [GitHub](https://github.com/AlexWalkerGD)  
+📧 alexwalkerson@hotmail.com
+
+---
+
+## 🪪 License
+
+This project is licensed under the **MIT License**.  
+Feel free to use, modify, and distribute it as you wish.
